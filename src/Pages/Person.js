@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Person.css"
+import "./Home.css"
 import { Card, Container, Carousel } from "react-bootstrap";
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
@@ -15,7 +16,7 @@ const Person = () => {
   return (
     <div className="container mx-auto font-mono">
       <Container className="d-flex justify-content-center mt-5">
-        <Card border="secondary" style={{ width: "50%" }}>
+        <Card border="secondary" className = "doer">
           <Card.Img src={require(`../assets/images/${id}/avatar.jpg`)} />
           <Card.Body>
             <Card.Title className="text-center">{t(`${id}.name`)}</Card.Title>
@@ -43,10 +44,13 @@ const Person = () => {
           )
         }
       </Carousel>
-      <iframe className="w-100 mb-5" style={{ height: "600px" }}
-        src={`https://www.youtube.com/embed/${data[id]["youtube"]}`}  
-        allowFullScreen
-      />
+      <div className = "youtube-container">
+        <iframe className="youtube-video" 
+          src={`https://www.youtube.com/embed/${data[id]["youtube"]}`}  
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+        />
+      </div>
       <YMaps key={t("locale")} query={{
         lang: t("locale"),
         load: 'Map,Placemark'
