@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/architects/static/css/main.05813fea.css",
+    "main.js": "/architects/static/js/main.c47711ee.js",
+    "static/js/787.28cb0dcd.chunk.js": "/architects/static/js/787.28cb0dcd.chunk.js",
+    "static/media/2.jpg": "/architects/static/media/2.d057dc3fb67fbe9cf5db.jpg",
+    "static/media/3.jpg": "/architects/static/media/3.45d05c56b3efe09c3b99.jpg",
+    "static/media/1.jpg": "/architects/static/media/1.7829869d0ae91de499b4.jpg",
+    "static/media/dev_marat.jpg": "/architects/static/media/dev_marat.70a2e853e0e2e973c38e.jpg",
+    "static/media/avatar.jpg": "/architects/static/media/avatar.276de89e692caacf0c6f.jpg",
+    "index.html": "/architects/index.html",
+    "static/media/getFetch.cjs": "/architects/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.05813fea.css.map": "/architects/static/css/main.05813fea.css.map",
+    "main.c47711ee.js.map": "/architects/static/js/main.c47711ee.js.map",
+    "787.28cb0dcd.chunk.js.map": "/architects/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05813fea.css",
+    "static/js/main.c47711ee.js"
+  ]
+}
