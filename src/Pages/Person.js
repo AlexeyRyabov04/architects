@@ -44,18 +44,17 @@ const Person = () => {
           )
         }
       </Carousel>
-      <div className = "youtube-container">
+      <div className = "youtube-container mb-5">
         <iframe className="youtube-video" 
           src={`https://www.youtube.com/embed/${data[id]["youtube"]}`}  
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
+          allowFullScreen
         />
       </div>
       <YMaps key={t("locale")} query={{
         lang: t("locale"),
         load: 'Map,Placemark'
       }}>
-        <Map className="me-auto ms-auto w-100 mb-5" style={{ height: "600px" }}
+        <Map className="me-auto ms-auto w-100 mb-5 ymap"
           defaultState={{
             center: data[id]["coords"],
             zoom: 18
